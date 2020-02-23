@@ -1,6 +1,6 @@
 export function poly1305ClampLittleEndianBytes(r: Uint8Array): void {
   if (r.byteLength !== 16) {
-    return null;
+    return undefined;
   }
 
   r[3] &= 15;

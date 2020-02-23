@@ -1,13 +1,11 @@
-import { test, runIfMain } from "https://deno.land/std/testing/mod.ts";
-import { assert, assertEquals } from "https://deno.land/std/testing/asserts.ts";
-import { encode } from "https://denopkg.com/chiefbiiko/std-encoding/mod.ts";
+import { assert, assertEquals, encode } from "./../deps.ts";
 import {
   poly1305ClampLittleEndianBytes,
   poly1305ClampLittleEndianBigInt
 } from "./poly1305_clamp.ts";
 import { littleEndianBytesToBigInt } from "./../util/util.ts";
 
-test({
+Deno.test({
   name: "poly1305ClampLittleEndianBytes",
   fn(): void {
     const r: Uint8Array = encode("deadbeefdeadbeefdeadbeefdeadbeef", "hex");
@@ -24,7 +22,7 @@ test({
   }
 });
 
-test({
+Deno.test({
   name: "poly1305ClampLittleEndianBigInt",
   fn(): void {
     let r: Uint8Array = encode("deadbeefdeadbeefdeadbeefdeadbeef", "hex");
@@ -42,5 +40,3 @@ test({
     assertEquals(actual, expected);
   }
 });
-
-runIfMain(import.meta, { parallel: true });
