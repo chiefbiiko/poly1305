@@ -2,7 +2,7 @@
 
 Poly1305 as defined by [RFC 8439](https://tools.ietf.org/html/rfc8439).
 
-[![Travis](http://img.shields.io/travis/chiefbiiko/poly1305.svg?style=flat)](http://travis-ci.org/chiefbiiko/poly1305) [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/chiefbiiko/poly1305?branch=master&svg=true)](https://ci.appveyor.com/project/chiefbiiko/poly1305)
+![ci](https://github.com/chiefbiiko/poly1305/workflows/ci/badge.svg)
 
 ## API
 
