@@ -1,4 +1,4 @@
-import { assertEquals, encode } from "./../deps.ts";
+import { assertEquals, encode } from "./../test_deps.ts";
 import { poly1305MsgBlockToBigInt } from "./poly1305_msg_block_to_big_int.ts";
 
 const {

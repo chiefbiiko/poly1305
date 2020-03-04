@@ -1,4 +1,4 @@
-import { assertEquals, encode } from "./deps.ts";
+import { assertEquals, encode } from "./test_deps.ts";
 import { OUTPUT_BYTES, poly1305 } from "./mod.ts";
 
 interface TestVector {

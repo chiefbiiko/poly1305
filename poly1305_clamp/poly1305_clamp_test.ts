@@ -1,4 +1,4 @@
-import { assert, assertEquals, encode } from "./../deps.ts";
+import { assert, assertEquals, encode } from "./../test_deps.ts";
 import {
   poly1305ClampLittleEndianBytes,
   poly1305ClampLittleEndianBigInt
